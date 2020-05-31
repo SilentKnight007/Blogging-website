@@ -6,7 +6,6 @@ from . models import Profile
 class UserRegisterForm(UserCreationForm):
 	email = forms.EmailField() #if not mendetory then pass requiared = False, but default it is True. 
 
-
 	class Meta:
 		model = User
 		fields = ['username','email','password1','password2']
